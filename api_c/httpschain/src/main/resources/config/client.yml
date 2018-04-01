@@ -24,7 +24,7 @@ oauth:
     # if scope token is not expired but in renew windown, we need slow retry delay.
     earlyRefreshRetryDelay: 4000
     # token server url. The default port number for token service is 6882.
-    server_url: https://192.168.99.100:6882
+    server_url: https://198.55.49.187:6882
     # token service unique id for OAuth 2.0 provider
     serviceId: com.networknt.oauth2-token-1.0.0
     # the following section defines uri and parameters for authorization code grant type
@@ -32,7 +32,7 @@ oauth:
       # token endpoint for authorization code grant
       uri: "/oauth2/token"
       # client_id for authorization code grant flow. client_secret is in secret.yml
-      client_id: 00c86f9c-6a1a-4c42-a660-926c0fe9e40d
+      client_id: 0e215955-891a-4002-8399-97feb4683a97
       # the web server uri that will receive the redirected authorization code
       redirect_uri: https://localhost:8080/authorization_code
       # optional scope, default scope in the client registration will be used if not defined.
@@ -44,7 +44,7 @@ oauth:
       # token endpoint for client credentials grant
       uri: "/oauth2/token"
       # client_id for client credentials grant flow. client_secret is in secret.yml
-      client_id: 00c86f9c-6a1a-4c42-a660-926c0fe9e40d
+      client_id: 0e215955-891a-4002-8399-97feb4683a97
       # optional scope, default scope in the client registration will be used if not defined.
       scope:
       - api_d.r
@@ -52,10 +52,10 @@ oauth:
   # light-oauth2 key distribution endpoint configuration
   key:
     # key distribution server url
-    server_url: https://192.168.99.100:6886
+    server_url: https://198.55.49.187:6886
     # the unique service id for key distribution service
     serviceId: com.networknt.oauth2-key-1.0.0
     # the path for the key distribution endpoint
     uri: "/oauth2/key"
     # client_id used to access key distribution service. It can be the same client_id with token service or not.
-    client_id: 00c86f9c-6a1a-4c42-a660-926c0fe9e40d
+    client_id: 0e215955-891a-4002-8399-97feb4683a97
