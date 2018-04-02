@@ -1,6 +1,5 @@
 
 # Singleton service factory configuration/IoC injection
-singletons:
 # HandlerProvider implementation
 - com.networknt.server.HandlerProvider:
   - com.networknt.apic.PathHandlerProvider
