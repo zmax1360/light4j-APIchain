@@ -44,13 +44,6 @@ public class DataGetHandler implements HttpHandler {
         return client.connect(new URI(URI), Http2Client.WORKER, Http2Client.SSL, Http2Client.POOL, OptionMap.create(UndertowOptions.ENABLE_HTTP2, true)).get();
     }
 
-    public DataGetHandler() {
-        try {
-            connection = getConnection(apidHost);
-        } catch (Exception e) {
-            logger.error("Exeption:", e);
-        }
-    }
 
     @Override
     public void handleRequest( HttpServerExchange exchange ) throws Exception {

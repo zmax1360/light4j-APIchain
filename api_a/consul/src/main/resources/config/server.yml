@@ -1,7 +1,7 @@
 # Server configuration
 ---
 # This is the default binding address if the service is dockerized.
-ip: 198.55.49.187
+ip: 0.0.0.0
 
 # Http port if enableHttp is true.
 httpPort:  7001

@@ -4,7 +4,7 @@ singletons:
 - com.networknt.registry.URL:
   - com.networknt.registry.URLImpl:
       protocol: light
-      host: 198.55.49.187
+      host: localhost
       port: 8080
       path: consul
       parameters:
@@ -12,7 +12,7 @@ singletons:
 - com.networknt.consul.client.ConsulClient:
   - com.networknt.consul.client.ConsulClientImpl:
     - java.lang.String: http
-    - java.lang.String: 198.55.49.187
+    - java.lang.String: localhost
     - int: 8500
 - com.networknt.registry.Registry:
   - com.networknt.consul.ConsulRegistry

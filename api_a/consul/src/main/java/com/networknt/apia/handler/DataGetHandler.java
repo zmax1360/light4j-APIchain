@@ -48,7 +48,7 @@ public class DataGetHandler implements HttpHandler {
    public ClientConnection getConnection(String URI) throws Exception {
       return client.connect(new URI(URI), Http2Client.WORKER, Http2Client.SSL, Http2Client.POOL, OptionMap.create(UndertowOptions.ENABLE_HTTP2, true)).get();
    }
-    public DataGetHandler() {
+   /* public DataGetHandler() {
         try {
 
             connectionB = getConnection(apibHost);
@@ -56,7 +56,7 @@ public class DataGetHandler implements HttpHandler {
         } catch (Exception e) {
             logger.error("Exeption:", e);
         }
-    }
+    }*/
 
     @Override
     public void handleRequest(HttpServerExchange exchange) throws Exception {
