@@ -24,7 +24,7 @@
         <version.commons-text>1.1</version.commons-text>
         <version.encoder>1.2.1</version.encoder>
         <version.logback>1.2.3</version.logback>
-        <version.junit>4.12</version.junit>
+        <version.junit>4.13.1</version.junit>
         <version.undertow>1.4.20.Final</version.undertow>
         <version.swagger>1.0.32</version.swagger>
         <version.json-schema-validator>0.1.15</version.json-schema-validator>
